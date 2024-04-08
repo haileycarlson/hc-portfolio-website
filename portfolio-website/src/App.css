@@ -1,19 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: "lora";
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -22,17 +15,50 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+} */
+
+#lora {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
-.App-link {
-  color: #61dafb;
+/************************ NAVBAR *********************************/
+
+.navbar {
+  background-color: whitesmoke;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.logo {
+  width: 16.25rem;
+}
+
+/*-------- MENU LINKS ---------*/
+nav a.nav-link {
+  letter-spacing: 0.0375rem;
+  cursor: pointer;
+}
+
+nav ul li {
+  text-transform: uppercase;
+}
+
+.navbar-nav > li > a {
+  margin-right: 0.75rem;
+  margin-right: 0.75rem;
+  border-top: 0.1875rem solid rgba(255, 255, 255, 0);
+}
+
+.navbar-brand {
+  padding-left: 30px;
+  padding-right: 30 px;
   }
-  to {
-    transform: rotate(360deg);
-  }
+
+.navbar-nav > li > a.active,  .navbar-nav > li > a.active:focus {
+  border-top: 0.1875rem solid rgb(190, 72, 211);
+}
+
+.navbar-nav > li > a:hover {
+  border-top: 0.1875rem solid rgb(190, 72, 211);
 }
